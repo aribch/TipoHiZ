@@ -8,7 +8,8 @@
       "start": "next start",
       "lint": "eslint --fix .",
       "prepare": "husky install",
-      "ts-check": "tsc --noEmit"
+      "ts-check": "tsc --noEmit",
+      "test": "jest --passWithNoTests --coverage"
    },
    "dependencies": {
       "@radix-ui/react-dialog": "1.1.2",
@@ -26,6 +27,9 @@
       "zustand": "5.0.0-rc.2"
    },
    "devDependencies": {
+      "@testing-library/jest-dom": "^6.6.3",
+      "@testing-library/react": "^16.0.1",
+      "@types/jest": "^29.5.14",
       "@types/node": "22.7.5",
       "@types/react": "18.3.11",
       "@typescript-eslint/eslint-plugin": "8.8.1",
@@ -40,6 +44,8 @@
       "file-loader": "6.2.0",
       "globals": "^15.10.0",
       "husky": "9.1.6",
+      "jest": "^29.7.0",
+      "jest-environment-jsdom": "^29.7.0",
       "postcss": "8.4.47",
       "simple-zustand-devtools": "1.1.0",
       "tailwindcss": "3.4.13",
